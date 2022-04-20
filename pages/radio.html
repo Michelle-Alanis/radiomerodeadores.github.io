@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Radio</title>
+	<link rel="stylesheet" type="text/css" href="../css/radio.css">
+</head>
+<body>
+	<header class="alinear">
+		<section id="solo"></section>
+		<section id="logo">
+			<img src="../images/Logo.png" height="100px">
+		</section>
+		<section id="links">
+			<p style="font-family: Verdana;font-size: 16px;padding-top: 42px;padding-bottom: 42px;">
+				<a href="../index.html" style="margin-right: 30px;">Inicio</a>
+				<a href="radio.html" style="margin-right: 30px;">Radio</a>
+				<a href="disney.html" style="margin-right: 30px;">Disney</a>
+				<a href="pop.html" style="margin-right: 30px;">Pop</a>
+				<a href="rock.html" style="margin-right: 30px;">Rock</a>
+			</p>
+		</section>
+	</header>
+	<main>
+		<section id="reproductor">
+			<link href="https://html5players.mexiserver.com/1/css/icast.min.css" type="text/css" rel="stylesheet">
+			<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+			<div class="icast" id="stream1" align="center"></div>
+			<script src="https://html5players.mexiserver.com/1/js/icast.min.js"></script>
+			<script> $("#stream1").icast({ URL: "http://freeuk26.listen2myradio.com:4110/;", version: "2", artwork: false, show_listeners: false, logo: "../images/Música.jpg", servertitle: "", autoplay: false }) 
+			</script>
+		</section>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>
